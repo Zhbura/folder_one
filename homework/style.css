@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  @font-face {
+    font-family: LatoRegular400;
+    src: url(fonts/Lato-Regular.ttf);     
+}
+@font-face {
+    font-family: LatoBold700;
+    src: url(fonts/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: LatoBlack900;
+    src: url(fonts/Lato-Black.ttf);
+}
+  header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222222;
+  } 
+  .header_section_one {
+      margin-left: 231px;
+  }
+  .search {
+      padding-left: 41px;
+  }
+  .header_section_two{
+      margin-right: 230px;
+  }
+  .lorem {
+      padding-left: 33px;
+      padding-right: 33px;
+  }
+  .top_info {
+    background: #F1E4E6;
+    position: relative;
+}
+.brandInside {
+    display: block;
+    display: flex;
+}
+.img_top_info {
+    width: 50%;
+}
+.label {
+    font-family: LatoBlack900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-self: center;
+    padding-left: 16px;
+    margin-left: 64px;
+}
+.font_size {
+    font-family: LatoBold700;
+    font-size: 32px;
+    line-height: 38px;
+}
+.font_color {
+    color: #F16D7F;
+}
+.line {
+    border-left: 12px solid #F16D7F;
+}
+  .catalog {
+      display: grid;
+      grid-template-columns: repeat(3, 360px);
+      grid-template-rows: 260px 180px;
+      grid-gap: 30px;
+      justify-content: center;
+      margin-top: 63px;
+  }
+  .accesories {
+      grid-column: 1/-1;
+  }
+.catalog > div {
+    position: relative;
+}
+.catalog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.text { 
+    position: relative;
+    z-index: 1;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: LatoRegular400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.bottom_text {
+    font-family: LatoBold700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+}
+@media (min-width: 768px) and (max-width: 1140px) {
+    .header_section_one {
+        margin-left: 35px;
+    }
+    .header_section_two {
+        margin-right: 32px;
+    }
+    .label {
+        font-size: 44px;
+        line-height: 53px;
+        margin-left: 40px;
+    }
+    
+    .font_size {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .catalog {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 167px 116px;
+        gap: 20px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 764px) {
+    .header_section_one {
+        margin-left: 16px;
+        }
+        .header_section_two{
+            margin-right: 16px;
+        }
+    .rubbish {
+        display: block;
+        display: none;  
+    }
+    .lorem {
+        display: block;
+        display: none;
+    }
+    .top_info {
+        padding-top: 148px;
+        padding-bottom: 149px;
+    }
+    .img_top_info{
+        display: block;
+        display: none;
+    } 
+    .label {
+        font-size: 38px;
+        line-height: 46px;
+        margin-left: 56px;
+    }
+    .font_size {
+        font-size: 20px;
+        line-height: 38px;
+    }
+    .catalog {
+        grid-template-columns: 343px;
+        grid-template-rows: repeat(3, 247px) 111px;
+        row-gap: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+} 
+
+.brandDark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hidden {
+    display: none;
+}
+.menu {
+    width: 232px;
+    height: inherit;
+    background: white;
+    margin-left: auto;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 37px 24px;
+    box-sizing: border-box;
+    position: relative;
+    max-height: inherit;
+    overflow: auto;
+}
+.menuClose {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.menuTitle {
+    font-family: LatoBold700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin-bottom: 16px;
+}
+.menuUnit a {
+    display: block;
+    font-size: 14px;
+    line-height: 33px;
+    color: #6f6e6e;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-left: 21px;
+    font-family: LatoRegular400;
+}
+.menuHeader {
+    font-family: LatoRegular400;
+    font-size: 14px;
+    line-height: 33px;
+    color: #f16d7f;
+}
